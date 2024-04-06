@@ -1,0 +1,1881 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  background-image: url("./images/MobileTopBG.svg"), linear-gradient(146.92deg, #ea14ec -2.59%, #1246ce 100.83%);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.wrapper .match-details {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  width: 100%;
+  height: 20vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+.wrapper .match-details .team-deatails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 60%;
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 11.81px;
+  line-height: 20.73px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+.wrapper .match-details .team-deatails img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+.wrapper .match-details .datep {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 11.81px;
+  line-height: 20.73px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.wrapper .match-details .livebtnsec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.wrapper .match-details .livebtnsec .liveicon {
+  width: 70px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  border-radius: 19.68px;
+  padding: 0px 10px 0px 10px;
+  background: #008632;
+  color: white;
+  z-index: 99;
+  position: relative;
+  top: 15px;
+}
+.wrapper .match-details .livebtnsec .liveicon img {
+  width: 15px;
+  height: 15px;
+  filter: invert(100%);
+}
+.wrapper .match-details .livebtnsec::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  width: 80%;
+  height: 1px;
+  background-color: #ffffff;
+  opacity: 20%;
+}
+.wrapper .Score-details {
+  width: 90%;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.wrapper .Score-details .leftsection, .wrapper .Score-details .rightsection {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.wrapper .Score-details .leftsection .logosec, .wrapper .Score-details .rightsection .logosec {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .Score-details .leftsection .logosec img, .wrapper .Score-details .rightsection .logosec img {
+  width: 16vw;
+  height: 16vw;
+  background-color: white;
+  border-radius: 100%;
+  padding: 10px;
+  border: 1.97px solid #e50695;
+  box-shadow: 0px 0px 1.97px 0px rgba(17, 23, 32, 0.7490196078);
+}
+.wrapper .Score-details .leftsection .scoresec, .wrapper .Score-details .rightsection .scoresec {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .Score-details .leftsection .scoresec .Score, .wrapper .Score-details .rightsection .scoresec .Score {
+  color: rgba(255, 255, 255, 0.7490196078);
+  width: 100%;
+  height: 35%;
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 17px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .Score-details .leftsection .scoresec .Score span, .wrapper .Score-details .rightsection .scoresec .Score span {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 9.84px;
+  font-weight: 400;
+  line-height: 11.81px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+.wrapper .Score-details .leftsection .scoresec .Score:nth-child(2), .wrapper .Score-details .rightsection .scoresec .Score:nth-child(2) {
+  font-size: 15px;
+}
+.wrapper .Score-details .middlesection {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .Score-details .middlesection span {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 9.84px;
+  font-weight: 700;
+  line-height: 9.84px;
+  text-align: center;
+  border-radius: 100%;
+  padding: 5px;
+  background: hsla(0, 0%, 100%, 0.2);
+}
+.wrapper .Score-details .middlesection span p {
+  color: #f7f7fa;
+}
+.wrapper .Score-details .rightsection {
+  width: 45%;
+  height: 100%;
+  flex-direction: row-reverse;
+}
+.wrapper .Score-details .rightsection .logosec img {
+  border: none;
+}
+.wrapper .other-details {
+  width: 80%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .other-details .windetails {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #f7f7fa;
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: center;
+  border-top: 0.8px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 0.8px solid rgba(255, 255, 255, 0.2);
+}
+.wrapper .other-details .venue {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-weight: 400;
+  font-size: 11px;
+  color: #f7f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: row;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 13px;
+}
+.wrapper .other-details .venue img {
+  width: 15px;
+  height: 15px;
+  filter: invert(100%);
+  margin-right: 10px;
+}
+.wrapper .players-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.wrapper .players-details .batterssec, .wrapper .players-details .bowlersec {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.wrapper .players-details .batterssec h4, .wrapper .players-details .bowlersec h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 13.78px;
+  font-weight: 700;
+  line-height: 16.14px;
+  padding: 20px;
+  color: #ffffff;
+  align-self: flex-start;
+}
+.wrapper .players-details .batterssec .batters, .wrapper .players-details .bowlersec .batters {
+  width: 90%;
+  height: 40px;
+  background: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 0px 10px 0px 10px;
+}
+.wrapper .players-details .batterssec .batters .midline, .wrapper .players-details .bowlersec .batters .midline {
+  height: 80%;
+  background-color: #1f1f1f;
+  width: 0.98px;
+  opacity: 20%;
+}
+.wrapper .players-details .batterssec .batters .playerfirst, .wrapper .players-details .bowlersec .batters .playerfirst, .wrapper .players-details .batterssec .batters .playerSecond, .wrapper .players-details .bowlersec .batters .playerSecond {
+  width: 50%;
+}
+.wrapper .players-details .batterssec .batters .playerfirst .name, .wrapper .players-details .bowlersec .batters .playerfirst .name, .wrapper .players-details .batterssec .batters .playerSecond .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 13.78px;
+  font-weight: 500;
+  line-height: 16.14px;
+  color: #000000;
+}
+.wrapper .players-details .batterssec .batters .playerfirst .Score, .wrapper .players-details .bowlersec .batters .playerfirst .Score, .wrapper .players-details .batterssec .batters .playerSecond .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 15.74px;
+  font-weight: 700;
+  line-height: 17.71px;
+  padding-left: 5px;
+  text-align: left;
+  color: #e50695;
+}
+.wrapper .players-details .batterssec .batters .playerSecond, .wrapper .players-details .bowlersec .batters .playerSecond {
+  border-left: none;
+  border-right: none;
+  text-align: right;
+}
+.wrapper .players-details .bowlersec {
+  width: 100%;
+  height: 50%;
+  padding-top: 0;
+}
+
+.newssection {
+  width: 100%;
+  margin-top: 20px;
+}
+.newssection .newsheader {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.newssection .newsheader h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  text-align: left;
+}
+.newssection .newsheader p {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.06px;
+  text-align: left;
+  color: #e50695;
+  text-decoration: underline;
+  align-self: flex-end;
+}
+.newssection .Cardsection {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.newssection .Cardsection .firstcardsec, .newssection .Cardsection .secondcardsec {
+  width: 100%;
+}
+.newssection .Cardsection .firstcardsec .card, .newssection .Cardsection .secondcardsec .card, .newssection .Cardsection .secondcardsec .cardmob {
+  width: 100%;
+  background: #f5f5f5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+.newssection .Cardsection .firstcardsec .card .card-image, .newssection .Cardsection .secondcardsec .card .card-image, .newssection .Cardsection .secondcardsec .cardmob .card-image {
+  border-radius: 10px;
+}
+.newssection .Cardsection .firstcardsec .card .card-image img, .newssection .Cardsection .secondcardsec .card .card-image img, .newssection .Cardsection .secondcardsec .cardmob .card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.newssection .Cardsection .firstcardsec .card .card-text, .newssection .Cardsection .secondcardsec .card .card-text, .newssection .Cardsection .secondcardsec .cardmob .card-text {
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.newssection .Cardsection .firstcardsec .card .card-text .textsec, .newssection .Cardsection .secondcardsec .card .card-text .textsec, .newssection .Cardsection .secondcardsec .cardmob .card-text .textsec {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  color: #1c1c28;
+}
+.newssection .Cardsection .firstcardsec .card .card-text .sharesec, .newssection .Cardsection .secondcardsec .card .card-text .sharesec, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.newssection .Cardsection .firstcardsec .card .card-text .sharesec p, .newssection .Cardsection .secondcardsec .card .card-text .sharesec p, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec p {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #1c1c28;
+}
+.newssection .Cardsection .firstcardsec .card .card-text .sharesec img, .newssection .Cardsection .secondcardsec .card .card-text .sharesec img, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec img {
+  width: 18px;
+  height: 18px;
+}
+.newssection .Cardsection .firstcardsec .card::after, .newssection .Cardsection .secondcardsec .card::after, .newssection .Cardsection .secondcardsec .cardmob::after {
+  position: absolute;
+  height: 6px;
+  content: "";
+  width: 100%;
+  left: 0;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
+}
+.newssection .Cardsection .secondcardsec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.newssection .Cardsection .secondcardsec .cardmob {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  align-items: normal;
+  position: relative;
+  border-radius: 10px;
+}
+.newssection .Cardsection .secondcardsec .cardmob .card-image {
+  width: 40%;
+}
+.newssection .Cardsection .secondcardsec .cardmob .card-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.newssection .Cardsection .secondcardsec .cardmob .card-text {
+  width: 60%;
+  justify-content: space-between;
+}
+.newssection .Cardsection .secondcardsec .cardmob .card-text .textsec {
+  font-family: "Roboto", sans-serif;
+  font-size: 11.81px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #1c1c28;
+}
+.newssection .Cardsection .secondcardsec .cardmob::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 30%;
+  top: 100%;
+  left: 65%;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
+}
+
+/**************************************************************************************************/
+/***************tablet*/
+/**************************************************************************************************************/
+@media (min-width: 960px) and (max-width: 1440px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    width: 100%;
+    background-image: url("./images/TabletTopBG.svg"), linear-gradient(146.92deg, #ea14ec -2.59%, #1246ce 100.83%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .wrapper .match-details {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .wrapper .match-details .team-deatails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 17px;
+    line-height: 20.73px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+  }
+  .wrapper .match-details .team-deatails img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+  }
+  .wrapper .match-details .datep {
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    line-height: 20.73px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .wrapper .match-details .livebtnsec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .wrapper .match-details .livebtnsec .liveicon {
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    border-radius: 19.68px;
+    padding: 0px 10px 0px 10px;
+    background: #008632;
+    color: white;
+    z-index: 99;
+    position: relative;
+    top: 15px;
+  }
+  .wrapper .match-details .livebtnsec .liveicon img {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%);
+  }
+  .wrapper .match-details .livebtnsec::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 20%;
+  }
+  .wrapper .Score-details {
+    width: 90%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .wrapper .Score-details .leftsection, .wrapper .Score-details .rightsection {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .wrapper .Score-details .leftsection .logosec, .wrapper .Score-details .rightsection .logosec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .Score-details .leftsection .logosec img, .wrapper .Score-details .rightsection .logosec img {
+    width: 12vw;
+    height: 12vw;
+    background-color: white;
+    border-radius: 100%;
+    padding: 20px;
+    border: 3px solid #e50695;
+    box-shadow: 0px 0px 1.97px 0px rgba(17, 23, 32, 0.7490196078);
+  }
+  .wrapper .Score-details .leftsection .scoresec, .wrapper .Score-details .rightsection .scoresec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score, .wrapper .Score-details .rightsection .scoresec .Score {
+    color: rgba(255, 255, 255, 0.7490196078);
+    width: 100%;
+    height: 35%;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.2);
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score span, .wrapper .Score-details .rightsection .scoresec .Score span {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.81px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score:nth-child(2), .wrapper .Score-details .rightsection .scoresec .Score:nth-child(2) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score:nth-child(3), .wrapper .Score-details .rightsection .scoresec .Score:nth-child(3) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .middlesection {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .Score-details .middlesection span {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 9.84px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+    background: hsla(0, 0%, 100%, 0.2);
+  }
+  .wrapper .Score-details .middlesection span p {
+    color: #f7f7fa;
+  }
+  .wrapper .Score-details .rightsection {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 45%;
+    height: 100%;
+    flex-direction: row-reverse;
+  }
+  .wrapper .Score-details .rightsection .logosec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .Score-details .rightsection .logosec img {
+    width: 12vw;
+    height: 12vw;
+    background-color: white;
+    border-radius: 100%;
+    padding: 20px;
+    border: 3px solid #e50695;
+    box-shadow: 0px 0px 1.97px 0px rgba(17, 23, 32, 0.7490196078);
+  }
+  .wrapper .Score-details .rightsection .scoresec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score {
+    color: rgba(255, 255, 255, 0.7490196078);
+    width: 100%;
+    height: 35%;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.2);
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score span {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.81px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score:nth-child(2) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score:nth-child(3) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .rightsection .logosec img {
+    border: none;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .wrapper .other-details {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .other-details .windetails {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #f7f7fa;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border-top: 0.8px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2);
+  }
+  .wrapper .other-details .venue {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f7f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 13px;
+  }
+  .wrapper .other-details .venue img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+    margin-right: 10px;
+  }
+  .wrapper .players-details {
+    width: 80%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .wrapper .players-details .batterssec, .wrapper .players-details .bowlersec {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+  }
+  .wrapper .players-details .batterssec h4, .wrapper .players-details .bowlersec h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16.14px;
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  .wrapper .players-details .batterssec .batters, .wrapper .players-details .bowlersec .batters {
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+  }
+  .wrapper .players-details .batterssec .batters .midline, .wrapper .players-details .bowlersec .batters .midline {
+    height: 80%;
+    background-color: #1f1f1f;
+    width: 0.98px;
+    opacity: 20%;
+  }
+  .wrapper .players-details .batterssec .batters .playerfirst, .wrapper .players-details .bowlersec .batters .playerfirst, .wrapper .players-details .batterssec .batters .playerSecond, .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .players-details .batterssec .batters .playerfirst .name, .wrapper .players-details .bowlersec .batters .playerfirst .name, .wrapper .players-details .batterssec .batters .playerSecond .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .batterssec .batters .playerfirst .Score, .wrapper .players-details .bowlersec .batters .playerfirst .Score, .wrapper .players-details .batterssec .batters .playerSecond .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .wrapper .players-details .batterssec .batters .playerSecond, .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+  }
+  .wrapper .players-details .batterssec .batters .playerSecond .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .batterssec .batters .playerSecond .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .wrapper .players-details .bowlersec {
+    width: 50%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 0;
+  }
+  .wrapper .players-details .bowlersec h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16.14px;
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  .wrapper .players-details .bowlersec .batters {
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+  }
+  .wrapper .players-details .bowlersec .batters .midline {
+    height: 80%;
+    background-color: #1f1f1f;
+    width: 0.98px;
+    opacity: 20%;
+  }
+  .wrapper .players-details .bowlersec .batters .playerfirst, .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+  }
+  .wrapper .players-details .bowlersec .batters .playerfirst .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .bowlersec .batters .playerfirst .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+  }
+  .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .newssection {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .newssection .newsheader {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .newssection .newsheader h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+  }
+  .newssection .newsheader p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 14.06px;
+    text-align: left;
+    color: #e50695;
+    text-decoration: underline;
+    align-self: flex-end;
+  }
+  .newssection .Cardsection {
+    width: 100%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newssection .Cardsection .firstcardsec, .newssection .Cardsection .secondcardsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  .newssection .Cardsection .firstcardsec .card, .newssection .Cardsection .secondcardsec .card, .newssection .Cardsection .secondcardsec .cardmob {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #0F1C70 -4%, rgba(45, 65, 207, 0) 58.15%), url("./images/RCb.png");
+  }
+  .newssection .Cardsection .firstcardsec .card .card-image, .newssection .Cardsection .secondcardsec .card .card-image, .newssection .Cardsection .secondcardsec .cardmob .card-image {
+    border-radius: 10px;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-image img, .newssection .Cardsection .secondcardsec .card .card-image img, .newssection .Cardsection .secondcardsec .cardmob .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text, .newssection .Cardsection .secondcardsec .card .card-text, .newssection .Cardsection .secondcardsec .cardmob .card-text {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .textsec, .newssection .Cardsection .secondcardsec .card .card-text .textsec, .newssection .Cardsection .secondcardsec .cardmob .card-text .textsec {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .sharesec, .newssection .Cardsection .secondcardsec .card .card-text .sharesec, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .sharesec p, .newssection .Cardsection .secondcardsec .card .card-text .sharesec p, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .sharesec img, .newssection .Cardsection .secondcardsec .card .card-text .sharesec img, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+  }
+  .newssection .Cardsection .firstcardsec .card::after, .newssection .Cardsection .secondcardsec .card::after, .newssection .Cardsection .secondcardsec .cardmob::after {
+    position: absolute;
+    height: 6px;
+    content: "";
+    top: 100%;
+    width: 90%;
+    left: 4%;
+    bottom: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
+  }
+  .newssection .Cardsection .secondcardsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob {
+    width: 22.7272727273%;
+    height: 100%;
+    background: #f5f5f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-image {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .textsec {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #1c1c28;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #1c1c28;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec img {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    filter: invert(0%);
+  }
+  .newssection .Cardsection .secondcardsec .cardmob::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 80%;
+    top: 100%;
+    left: 10%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
+  }
+}
+/**********************************************************************/
+/********************deskstop*********************/
+@media (min-width: 1440px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  .wrapper {
+    width: 100%;
+    background-image: url("./images/DesktopTopBG.svg"), linear-gradient(146.92deg, #ea14ec -2.59%, #1246ce 100.83%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .wrapper .match-details {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .wrapper .match-details .team-deatails {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 60%;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 17px;
+    line-height: 20.73px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+  }
+  .wrapper .match-details .team-deatails img {
+    width: 25px;
+    height: 25px;
+    filter: invert(100%);
+  }
+  .wrapper .match-details .datep {
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    line-height: 20.73px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  .wrapper .match-details .livebtnsec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+  }
+  .wrapper .match-details .livebtnsec .liveicon {
+    width: 70px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    border-radius: 19.68px;
+    padding: 0px 10px 0px 10px;
+    background: #008632;
+    color: white;
+    z-index: 99;
+    position: relative;
+    top: 15px;
+  }
+  .wrapper .match-details .livebtnsec .liveicon img {
+    width: 15px;
+    height: 15px;
+    filter: invert(100%);
+  }
+  .wrapper .match-details .livebtnsec::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    bottom: 0;
+    width: 80%;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 20%;
+  }
+  .wrapper .Score-details {
+    width: 70%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .wrapper .Score-details .leftsection, .wrapper .Score-details .rightsection {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .wrapper .Score-details .leftsection .logosec, .wrapper .Score-details .rightsection .logosec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .Score-details .leftsection .logosec img, .wrapper .Score-details .rightsection .logosec img {
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+    border-radius: 100%;
+    padding: 20px;
+    border: 3px solid #e50695;
+    box-shadow: 0px 0px 1.97px 0px rgba(17, 23, 32, 0.7490196078);
+  }
+  .wrapper .Score-details .leftsection .scoresec, .wrapper .Score-details .rightsection .scoresec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score, .wrapper .Score-details .rightsection .scoresec .Score {
+    color: rgba(255, 255, 255, 0.7490196078);
+    width: 100%;
+    height: 35%;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.2);
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score span, .wrapper .Score-details .rightsection .scoresec .Score span {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.81px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score:nth-child(2), .wrapper .Score-details .rightsection .scoresec .Score:nth-child(2) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .leftsection .scoresec .Score:nth-child(3), .wrapper .Score-details .rightsection .scoresec .Score:nth-child(3) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .middlesection {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .Score-details .middlesection span {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 9.84px;
+    text-align: center;
+    border-radius: 100%;
+    padding: 5px;
+    background: hsla(0, 0%, 100%, 0.2);
+  }
+  .wrapper .Score-details .middlesection span p {
+    color: #f7f7fa;
+  }
+  .wrapper .Score-details .rightsection {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 45%;
+    height: 100%;
+    flex-direction: row-reverse;
+  }
+  .wrapper .Score-details .rightsection .logosec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .wrapper .Score-details .rightsection .logosec img {
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+    border-radius: 100%;
+    padding: 20px;
+    border: 3px solid #e50695;
+    box-shadow: 0px 0px 1.97px 0px rgba(17, 23, 32, 0.7490196078);
+  }
+  .wrapper .Score-details .rightsection .scoresec {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score {
+    color: rgba(255, 255, 255, 0.7490196078);
+    width: 100%;
+    height: 35%;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.2);
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score span {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 11.81px;
+    padding-bottom: 5px;
+    text-align: left;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score:nth-child(2) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score:nth-child(3) {
+    font-size: 20px;
+  }
+  .wrapper .Score-details .rightsection .logosec img {
+    border: none;
+  }
+  .wrapper .Score-details .rightsection .scoresec .Score {
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .wrapper .other-details {
+    width: 80%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .wrapper .other-details .windetails {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #f7f7fa;
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    border-top: 0.8px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 0px solid rgba(255, 255, 255, 0.2);
+  }
+  .wrapper .other-details .venue {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f7f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 13px;
+  }
+  .wrapper .other-details .venue img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+    margin-right: 10px;
+  }
+  .wrapper .players-details {
+    width: 60%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 20px;
+  }
+  .wrapper .players-details .batterssec, .wrapper .players-details .bowlersec {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+  }
+  .wrapper .players-details .batterssec h4, .wrapper .players-details .bowlersec h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16.14px;
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  .wrapper .players-details .batterssec .batters, .wrapper .players-details .bowlersec .batters {
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+  }
+  .wrapper .players-details .batterssec .batters .midline, .wrapper .players-details .bowlersec .batters .midline {
+    height: 80%;
+    background-color: #1f1f1f;
+    width: 0.98px;
+    opacity: 20%;
+  }
+  .wrapper .players-details .batterssec .batters .playerfirst, .wrapper .players-details .bowlersec .batters .playerfirst, .wrapper .players-details .batterssec .batters .playerSecond, .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper .players-details .batterssec .batters .playerfirst .name, .wrapper .players-details .bowlersec .batters .playerfirst .name, .wrapper .players-details .batterssec .batters .playerSecond .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .batterssec .batters .playerfirst .Score, .wrapper .players-details .bowlersec .batters .playerfirst .Score, .wrapper .players-details .batterssec .batters .playerSecond .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .wrapper .players-details .batterssec .batters .playerSecond, .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+  }
+  .wrapper .players-details .batterssec .batters .playerSecond .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .batterssec .batters .playerSecond .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .wrapper .players-details .bowlersec {
+    width: 50%;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 0;
+  }
+  .wrapper .players-details .bowlersec h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 16.14px;
+    padding: 20px;
+    color: #ffffff;
+    margin-left: 10px;
+    align-self: flex-start;
+  }
+  .wrapper .players-details .bowlersec .batters {
+    width: 90%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 0px 10px 0px 10px;
+  }
+  .wrapper .players-details .bowlersec .batters .midline {
+    height: 80%;
+    background-color: #1f1f1f;
+    width: 0.98px;
+    opacity: 20%;
+  }
+  .wrapper .players-details .bowlersec .batters .playerfirst, .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+  }
+  .wrapper .players-details .bowlersec .batters .playerfirst .name, .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .bowlersec .batters .playerfirst .Score, .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .wrapper .players-details .bowlersec .batters .playerSecond {
+    width: 50%;
+    border-left: none;
+    border-right: none;
+    text-align: right;
+  }
+  .wrapper .players-details .bowlersec .batters .playerSecond .name {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 13.78px;
+    font-weight: 500;
+    line-height: 16.14px;
+    color: #000000;
+  }
+  .wrapper .players-details .bowlersec .batters .playerSecond .Score {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 15.74px;
+    font-weight: 700;
+    line-height: 17.71px;
+    padding-left: 5px;
+    text-align: left;
+    color: #e50695;
+  }
+  .newssection {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newssection .newsheader {
+    margin-top: 20px;
+    width: 80%;
+    margin-bottom: 40px;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .newssection .newsheader h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 18.75px;
+    text-align: left;
+  }
+  .newssection .newsheader p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 14.06px;
+    text-align: left;
+    color: #e50695;
+    text-decoration: underline;
+    align-self: flex-end;
+  }
+  .newssection .Cardsection {
+    width: 100%;
+    padding: 0 20px 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .newssection .Cardsection .firstcardsec, .newssection .Cardsection .secondcardsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 20px;
+  }
+  .newssection .Cardsection .firstcardsec .card, .newssection .Cardsection .secondcardsec .card, .newssection .Cardsection .secondcardsec .cardmob {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #0F1C70 -4%, rgba(45, 65, 207, 0) 58.15%), url("./images/RCb.png");
+  }
+  .newssection .Cardsection .firstcardsec .card .card-image, .newssection .Cardsection .secondcardsec .card .card-image, .newssection .Cardsection .secondcardsec .cardmob .card-image {
+    border-radius: 10px;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-image img, .newssection .Cardsection .secondcardsec .card .card-image img, .newssection .Cardsection .secondcardsec .cardmob .card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    display: none;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text, .newssection .Cardsection .secondcardsec .card .card-text, .newssection .Cardsection .secondcardsec .cardmob .card-text {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .textsec, .newssection .Cardsection .secondcardsec .card .card-text .textsec, .newssection .Cardsection .secondcardsec .cardmob .card-text .textsec {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .sharesec, .newssection .Cardsection .secondcardsec .card .card-text .sharesec, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .sharesec p, .newssection .Cardsection .secondcardsec .card .card-text .sharesec p, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #ffffff;
+  }
+  .newssection .Cardsection .firstcardsec .card .card-text .sharesec img, .newssection .Cardsection .secondcardsec .card .card-text .sharesec img, .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec img {
+    width: 18px;
+    height: 18px;
+    filter: invert(100%);
+  }
+  .newssection .Cardsection .firstcardsec .card::after, .newssection .Cardsection .secondcardsec .card::after, .newssection .Cardsection .secondcardsec .cardmob::after {
+    position: absolute;
+    height: 6px;
+    content: "";
+    top: 100%;
+    width: 90%;
+    left: 4%;
+    bottom: 0;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
+  }
+  .newssection .Cardsection .secondcardsec {
+    width: 82%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob {
+    width: 22.7272727273%;
+    height: 100%;
+    background: #f5f5f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-image {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .textsec {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: #1c1c28;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec p {
+    font-family: "Roboto", sans-serif;
+    font-size: 11.81px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    color: #1c1c28;
+  }
+  .newssection .Cardsection .secondcardsec .cardmob .card-text .sharesec img {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    filter: invert(0%);
+  }
+  .newssection .Cardsection .secondcardsec .cardmob::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 80%;
+    top: 100%;
+    left: 10%;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
+  }
+}/*# sourceMappingURL=style.css.map */
