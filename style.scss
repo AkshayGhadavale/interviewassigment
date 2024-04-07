@@ -443,11 +443,15 @@ $greycolor: #8a8a8a;
         position: relative;
         .card-image {
           border-radius: 10px;
-
+      overflow: hidden;
           img {
             width: 100%;
             height: 100%;
             border-radius: 10px;
+            transform: scale(1.8);
+  transform-origin: 60% 10%;
+
+   display: block;
           }
         }
         .card-text {
@@ -511,9 +515,11 @@ $greycolor: #8a8a8a;
       gap: 20px;
       flex-wrap: wrap;
       margin-bottom: 20px;
+
       .cardmob {
         @extend .card;
         @include disply-flex-center;
+
         flex-direction: row-reverse;
         align-items: normal;
         position: relative;
@@ -525,24 +531,10 @@ $greycolor: #8a8a8a;
             width: 100%;
             height: 100%;
             border-radius: 10px;
+            
           }
         }
-        //   .card-image::before {
-        //         position: absolute;
-        //         height: 4px;
-        //         content: "";
-
-        //         width: 90%;
-        //         left: 0;
-        //        bottom:0;
-
-        //         border-top-left-radius: 0px;
-        //         border-top-right-radius: 0px;
-        //         border-bottom-left-radius: 10px;
-        //         border-bottom-right-radius: 10px;
-        //         background: linear-gradient(90deg, #ea14ec -2.04%, #1246ce 102.14%);
-
-        //   }
+    
         .card-text {
           width: 60%;
           justify-content: space-between;
@@ -551,7 +543,7 @@ $greycolor: #8a8a8a;
             @include font-roboto-style;
             font-size: 12px;
             font-weight: 700;
-            line-height: 24px;
+            line-height: 16px;
             text-align: left;
             color: $blackcolor;
           }
@@ -1121,12 +1113,14 @@ $greycolor: #8a8a8a;
 
           .card-image {
             border-radius: 10px;
-
+overflow: hidden;
             img {
               width: 100%;
               height: 100%;
               border-radius: 10px;
               display: none;
+              transform: scale(1.8);
+              transform-origin: 60% 10%;
             }
           }
           .card-text {
@@ -1207,12 +1201,14 @@ $greycolor: #8a8a8a;
           .card-image {
             border-radius: 10px;
             width: 100%;
-
+overflow: hidden;
             img {
               display: block;
               width: 100%;
               height: 100%;
               border-radius: 10px;
+              transform: scale(1.8);
+              transform-origin: 60% 10%;
             }
           }
           .card-text {
@@ -1811,8 +1807,7 @@ $greycolor: #8a8a8a;
           border-bottom-left-radius: 10px;
           border-bottom-right-radius: 10px;
           position: relative;
-          background-size: cover;
-          background-position: center;
+         
           background-repeat: no-repeat;
 
           background-image: linear-gradient(
@@ -1821,6 +1816,7 @@ $greycolor: #8a8a8a;
               rgba(45, 65, 207, 0) 58.15%
             ),
             url("./images/RCb.png");
+     
 
           .card-image {
             border-radius: 10px;
@@ -1830,6 +1826,8 @@ $greycolor: #8a8a8a;
               height: 100%;
               border-radius: 10px;
               display: none;
+              transform: scale(1.8);
+              transform-origin: 60% 10%;
             }
           }
           .card-text {
